@@ -7,9 +7,9 @@ jobs:
       - name: Connexion SSH avec le serveur
         uses: appleboy/ssh-action@master
         with:
-          host: "ssh-${{ secrets.USERNAME }}.alwaysdata.net"
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          host: "ssh-${{ secrets.alwaydata_username }}.alwaysdata.net"
+          username: ${{ secrets.alwaydata_username }}
+          password: ${{ secrets.alwaydata_password }}
           script: |
             cd $HOME/www/
   Copy:
@@ -19,14 +19,13 @@ jobs:
       - name: Connexion SSH avec le serveur
         uses: appleboy/ssh-action@master
         with:
-          host: "ssh-${{ secrets.USERNAME }}.alwaysdata.net"
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          host: "ssh-${{ secrets.alwaydata_username }}.alwaysdata.net"
+          username: ${{ secrets.alwaydata_username }}
+          password: ${{ secrets.alwaydata_password }}
           script: |
             last_directory=$(basename ${{ runner.workspace }})
             cd $HOME/
             git clone https://github.com/${{ github.repository }}.git
-            # Vérifier si le répertoire de destination existe
             if [ "$(ls -A ./www)" ]; then
               rsync -r ./$last_directory/ ./www
               rm -rf ./$last_directory
