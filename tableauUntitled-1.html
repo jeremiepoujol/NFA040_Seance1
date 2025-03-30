@@ -2,34 +2,48 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Démo bloc HTML affiché</title>
+  <title>Démo affichage code + rendu</title>
   <style>
-    .code-block {
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    .code-box {
       background-color: #f4f4f4;
-      border: 1px solid #ddd;
+      border: 1px solid #ccc;
       border-radius: 10px;
       padding: 15px;
-      margin: 20px 0;
-      font-family: 'Courier New', Courier, monospace;
       white-space: pre-wrap;
+      font-family: 'Courier New', monospace;
       overflow-x: auto;
+    }
+    .column-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
 
-  <h2>Voici mon code HTML affiché dans une belle boîte :</h2>
+<h2>Exemple : Code HTML et son rendu</h2>
 
-  <div class="code-block">
+<div class="container">
+  <!-- Colonne code source -->
+  <div class="column">
+    <div class="column-title">💻 Code HTML</div>
+    <div class="code-box">
 &lt;!DOCTYPE html&gt;<br>
 &lt;html&gt;<br>
 &lt;head&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Ma famille&lt;/title&gt;<br>
 &lt;/head&gt;<br>
 &lt;body&gt;<br><br>
-
 &lt;h2&gt;Composition de la famille&lt;/h2&gt;<br><br>
-
 &lt;table border="1"&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Rôle&lt;/th&gt;<br>
@@ -57,10 +71,45 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;7 mois&lt;/td&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
 &lt;/table&gt;<br><br>
-
 &lt;/body&gt;<br>
 &lt;/html&gt;
+    </div>
   </div>
+
+  <!-- Colonne rendu -->
+  <div class="column">
+    <div class="column-title">🖥️ Résultat visuel</div>
+    
+    <h2>Composition de la famille</h2>
+    <table border="1">
+      <tr>
+        <th>Rôle</th>
+        <th>Prénom</th>
+        <th>Âge</th>
+      </tr>
+      <tr>
+        <td>Papa</td>
+        <td>Jérémie</td>
+        <td>38 ans</td>
+      </tr>
+      <tr>
+        <td>Maman</td>
+        <td>Pauline</td>
+        <td>36 ans</td>
+      </tr>
+      <tr>
+        <td>Fille 1</td>
+        <td>Zoe</td>
+        <td>7 ans</td>
+      </tr>
+      <tr>
+        <td>Fille 2</td>
+        <td>Alix</td>
+        <td>7 mois</td>
+      </tr>
+    </table>
+  </div>
+</div>
 
 </body>
 </html>
