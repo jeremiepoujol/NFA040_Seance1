@@ -1,4 +1,5 @@
 <html>
+<head>
 p {
     color: red;
 }
@@ -11,7 +12,8 @@ p {
     padding: 20px;
     margin: 30px
 }
-<section>
+</head>
+<body>
 	<h1>Mon titre 1</h1>
 	<article>
 		<h2>Mon Titre 2</h2>
@@ -25,4 +27,5 @@ p {
 		<p id="superid" class="maclasse">Cinquième paragraphe</p>
 		<p>Sixième paragraphe</p>
 	</article>
+<body/>
 </html>
