@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Bonjour personnalisé</title>
+</head>
+<body>
+    <h1>Entre ton prénom :</h1>
+    
+    <input type="text" id="prenom" placeholder="Ton prénom">
+    <button onclick="direBonjour()">Clique ici</button>
+
+    <script>
+        function direBonjour() {
+            // On récupère la valeur du champ input
+            var prenom = document.getElementById("prenom").value;
+
+            // On affiche l'alerte personnalisée
+            alert("Hello " + prenom + " !");
+        }
+    </script>
+</body>
+</html>
