@@ -10,7 +10,7 @@
         <tr>
             <th>Nom</th>
             <th>Pouvoir</th>
-            <th>Équipe
+            <th>Équipe<th/> /* j'ai modifié */
         </tr>
         <tr>
             <td>Iron Man</td>
@@ -25,19 +25,19 @@
 
     <h2>Films préférés</h2>
     <ol>
-        <li>Endgame
-        <li>Infinity War
-        <li>Iron Man 1
+        <li>Endgame</li> /* j'ai modifié */
+        <li>Infinity War</li> /* j'ai modifié */ 
+        <li>Iron Man 1</li> /* j'ai modifié */
     </ol>
 
     <h2>Objets iconiques</h2>
-    <Ul>
-        <li>Mjolnir
+    <ul>/* j'ai modifié */
+        <li>Mjolnir</li>/* j'ai modifié */
         <li>Gantelet de l'infini</li>
-        <li>Le bouclier de Captain America
+        <li>Le bouclier de Captain America</li>
     </ul>
 
-    <p boder="1">Ceci est un paragraphe avec un attribut incorrect</p>
+    <p border="1">Ceci est un paragraphe avec un attribut incorrect</p> /* j'ai modifié */
 
 </body>
 </html>
