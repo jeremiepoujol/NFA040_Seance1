@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Compteur interactif 🧮</title>
+</head>
+<body>
+    <h1>Compteur interactif</h1>
+    <p>Nombre de clics : <span id="compteur">0</span></p>
+
+    <!-- Boutons -->
+    <button onclick="incrementer()">➕ Ajouter</button>
+    <button onclick="decrementer()">➖ Diminuer</button>
+    <button onclick="reinitialiser()">🔄 Réinitialiser</button>
+
+    <script>
+        // On initialise le compteur à 0
+        var nombreDeClics = 0;
+
+        // Fonction pour augmenter
+        function incrementer() {
+            nombreDeClics++;
+            mettreAJourAffichage();
+        }
+
+        // Fonction pour diminuer
+        function decrementer() {
+            nombreDeClics--;
+            mettreAJourAffichage();
+        }
+
+        // Fonction pour réinitialiser
+        function reinitialiser() {
+            nombreDeClics = 0;
+            mettreAJourAffichage();
+        }
+
+        // Fonction pour mettre à jour l'affichage du compteur
+        function mettreAJourAffichage() {
+            document.getElementById("compteur").innerText = nombreDeClics;
+        }
+    </script>
+</body>
+</html>
