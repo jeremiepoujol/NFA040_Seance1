@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Changeur de couleurs 🎨</title>
+</head>
+<body>
+    <h1>Amuse-toi avec les couleurs !</h1>
+    <button onclick="changerCouleur()">Change la couleur de fond</button>
+
+    <script>
+        function changerCouleur() {
+            // Tableau de couleurs
+            var couleurs = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan"];
+
+            // On choisit une couleur au hasard
+            var couleurAleatoire = couleurs[Math.floor(Math.random() * couleurs.length)];
+
+            // On change la couleur de fond du body
+            document.body.style.backgroundColor = couleurAleatoire;
+        }
+    </script>
+</body>
+</html>
