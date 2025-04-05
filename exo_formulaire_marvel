@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Formulaire Marvel Niveau 2</title>
+</head>
+<body>
+    <h1>Rejoignez les héros Marvel !</h1>
+
+    <form>
+        <fieldset>
+            <legend>Identité du héros</legend>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom"
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom">
+        </fieldset>
+
+        <fieldset>
+            <legend>Informations complémentaires</legend>
+
+            <label for="pouvoir">Votre super-pouvoir :</label>
+            <input type="text" id="pouvoir" name="pouvoir">
+
+            <label for="description">Décrivez vos exploits :</label>
+            <textarea id="description" name="description"></textarea>
+
+            <label for="equipe">Choisissez votre équipe :</label>
+            <select id="equipe" name="equipe">
+                <option value="avengers">Avengers
+                <option value="xmen">X-Men
+                <option value="guardians">Gardiens de la Galaxie
+            </select>
+        </fieldset>
+
+        <button type="submit">Envoyer</buton>
+    </form>
+
+</body>
+</html>
