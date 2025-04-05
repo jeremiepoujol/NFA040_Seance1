@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Compteur de clics 🧮</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+    <h1>Compteur de clics</h1>
+    <p>Nombre de clics : <span id="compteur">0</span></p>
+    <button onclick="incrementer()">Clique ici !</button>
+
+    <script>
+        // On commence à 0
+        var nombreDeClics = 0;
+
+        function incrementer() {
+            // On ajoute 1
+            nombreDeClics++;
+
+            // On met à jour l'affichage dans la page
+            document.getElementById("compteur").innerText = nombreDeClics;
+        }
+    </script>
+</body>
+</html>
