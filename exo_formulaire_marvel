@@ -11,7 +11,7 @@
             <legend>Identité du héros</legend>
 
             <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom"
+            <input type="text" id="nom" name="nom"> 
 
             <label for="prenom">Prénom :</label>
             <input type="text" id="prenom" name="prenom">
