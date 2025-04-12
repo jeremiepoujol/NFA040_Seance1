@@ -1,4 +1,12 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>le carré magique2</title>
+        
+
 if (? == ? || ? == ? || ? == ? || ? == ?) {
         resultat += "*";
 }
 else {resultat += "o";}
+</body>
+</html> 
