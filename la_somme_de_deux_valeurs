@@ -3,5 +3,29 @@
 <meta charset="UTF-8"/>
 <title>La somme de deux valeurs</title>
 
+<script>
+
+function afficher(){
+        
+        var saisie = parseInt(document.getElementById('V1').value);
+        var saisie = parseInt(document.getElementById('V2').value);
+        var somme = V1 + V2;
+        var resultat = "";        
+        document.getElementById('result').innerHTML = resultat;
+}
+
+</script>
+
+</head>
+<body>
+<h1>Les étoiles</h1>
+<p>Saisir un chiffre : <input id="V1"/></p>
+<p>Saisir un chiffre : <input id="V2"/></p>
+<button onclick="résultat()">Résultat</button>
+<div id="result"></div>
+</body>
+</html>     
+
+
 </body>
 </html> 
