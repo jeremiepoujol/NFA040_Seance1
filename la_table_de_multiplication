@@ -6,7 +6,7 @@
 function resultat(){
         var saisie1 = parseInt(document.getElementById('V1').value);
         var saisie2 = parseInt(document.getElementById('V2').value);
-        resultat = "";
+        var resultat = "x";
         
         for (j=1, ???,  j++) {
         
