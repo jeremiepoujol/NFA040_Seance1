@@ -9,9 +9,8 @@ function afficher(){
         
         var saisie1 = parseInt(document.getElementById('V1').value);
         var saisie2 = parseInt(document.getElementById('V2').value);
-        var somme = V1 + V2;
-        var resultat = "";        
-        document.getElementById('result').innerHTML = resultat;
+        var somme = saisie1 + saisie2;        
+        document.getElementById('result').innerHTML = somme;
 }
 
 </script>
