@@ -8,5 +8,22 @@ if (? == ? || ? == ? || ? == ? || ? == ?) {
         resultat += "*";
 }
 else {resultat += "o";}
+function afficher(){
+        
+        var saisie = parseInt(document.getElementById('V1').value);
+        var resultat = "";        
+                
+        for (j=0; j<saisie ; j++){
+                for (i=0; i<saisie ; i++){
+                        if (i == 0 || ? == ? || ? == ? || ? == ?) {
+        resultat += "*";
+}
+else {resultat += "o";}
+                }
+                resultat += "</br>";
+        }
+        document.getElementById('result').innerHTML = resultat;
+}
+
 </body>
 </html> 
